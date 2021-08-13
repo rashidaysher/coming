@@ -3,25 +3,56 @@
     padding: 0;
 }
 
-header{
-    background-image:  url(./images/woman-570883_1920.jpg);
-    height: 100vh;
-    background-position: center;
-    background-size: cover;
+.slider{
+    width: 100%;
+    height: 100vh; 
+    background: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7));
+    position: absolute;
+   
+    overflow: hidden;
+}
+
+#slideImg {
+    width: 100%;
+    height: 100%;
+    animation: zoom 3s linear infinite;
+    
+}
+
+@keyframes zoom{
+    0%{
+        transform: scale(1.3);
+    }
+
+    15%{
+        transform: scale(1);
+    }
+
+    85%{
+        transform: scale(1);
+    }
+
+    100%{
+        transform: scale(1.3);
+    }
 }
 
 .hero {
+    background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5));
+
+}  
+.content{
     top: 50%;
     left: 50%;
     position: absolute;
     transform: translate(-50%, -50%);
     text-align: center;
-
-} 
-
+    
+}
 h1 {
     font-size: 60px;
     letter-spacing: 10px;
+    color: black;
 }
 
 hr {
@@ -33,9 +64,11 @@ hr {
 p {
     font-size: 20px;
     margin-bottom: 30px;
+    color: black;
 }
 
 #launch {
-     font-size: 40px;
+     font-size: 50px;
      word-spacing: 20px;
 }
+
